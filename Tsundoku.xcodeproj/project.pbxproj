@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -81,7 +81,7 @@
 		01C7B266A11CA99D552532CB /* SpineResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineResultRowView.swift; sourceTree = "<group>"; };
 		02B6F339780ABAA82399BAF6 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0C122D237BE3BDB099B04939 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		1DE88EE8A5E3D5453C57FA7F /* YOLOBookDetector.mlpackage */ = {isa = PBXFileReference; path = YOLOBookDetector.mlpackage; sourceTree = "<group>"; };
+		1DE88EE8A5E3D5453C57FA7F /* YOLOBookDetector.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = YOLOBookDetector.mlpackage; sourceTree = "<group>"; };
 		27A62B85EEDBE97BF5374A39 /* SpineImageFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineImageFullScreenView.swift; sourceTree = "<group>"; };
 		289ECFDF277A30736EA3BBFE /* VLMSpineRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLMSpineRecognizer.swift; sourceTree = "<group>"; };
 		3294E45EB695D924C334775D /* BookMetadataServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMetadataServiceImpl.swift; sourceTree = "<group>"; };
@@ -92,10 +92,10 @@
 		49ED5B555123CBCBA8085623 /* BookMetadataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMetadataService.swift; sourceTree = "<group>"; };
 		4E9F9787BCAC8A01B119EF59 /* SpineDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineDetectionService.swift; sourceTree = "<group>"; };
 		5D71194D5D8FE063739D3E61 /* DetectionPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionPipeline.swift; sourceTree = "<group>"; };
-		619C0C6984D594B86D9F641B /* TsundokuTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TsundokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		619C0C6984D594B86D9F641B /* TsundokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsundokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FFA6A6DFADEF9598CC46A0F /* PlatformImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformImage.swift; sourceTree = "<group>"; };
 		76B4CC58A6BC28C2052A488A /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
-		7EB9FB91F8A89FE61A66E561 /* Tsundoku.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Tsundoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB9FB91F8A89FE61A66E561 /* Tsundoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tsundoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AD7F37D02C0AA5F946211F /* APIResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModels.swift; sourceTree = "<group>"; };
 		8E092998CC6C21FA24D07ECB /* YOLOSpineDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLOSpineDetector.swift; sourceTree = "<group>"; };
 		93266F0326D7805414CCD78F /* HTMLStripper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLStripper.swift; sourceTree = "<group>"; };
@@ -107,14 +107,14 @@
 		A695F9988022C0E0975DB0D9 /* MetadataSearchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataSearchDemoView.swift; sourceTree = "<group>"; };
 		B8A6B869C1405E7FF2E67AAE /* FuzzyMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzyMatcher.swift; sourceTree = "<group>"; };
 		BD25669EAD79A9FC8D6D6D3A /* BookMetadataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMetadataServiceTests.swift; sourceTree = "<group>"; };
-		BED21C1012C5DBC1039A4077 /* TsundokuCLI */ = {isa = PBXFileReference; includeInIndex = 0; path = TsundokuCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED21C1012C5DBC1039A4077 /* TsundokuCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TsundokuCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23EE47FA836151C26E7290B /* GoogleBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBooksService.swift; sourceTree = "<group>"; };
 		DFACBF712ABF38E2374B1D93 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		DFEC6986B62904213ABC39C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7137B51F25F9183B5F87942 /* BookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResult.swift; sourceTree = "<group>"; };
 		EBECBB2AAB663E3137D1562C /* SearchResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRowView.swift; sourceTree = "<group>"; };
 		F04B32325A6738A9FB726F55 /* FastSAMSpineDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSAMSpineDetector.swift; sourceTree = "<group>"; };
-		F575EE00FBDA5E3D72B31307 /* FastSAMBookSegmenter.mlpackage */ = {isa = PBXFileReference; path = FastSAMBookSegmenter.mlpackage; sourceTree = "<group>"; };
+		F575EE00FBDA5E3D72B31307 /* FastSAMBookSegmenter.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = FastSAMBookSegmenter.mlpackage; sourceTree = "<group>"; };
 		F7A92C519C87D66C6E8A30BE /* SpineScanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineScanDetailView.swift; sourceTree = "<group>"; };
 		FE29A8F91B6648B689823133 /* ShelfScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfScanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -383,7 +383,6 @@
 			packageReferences = (
 				3E57ADD14A48CA8B3C66CC32 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
 			);
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -653,6 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4L84NEK672;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tsundoku/Info.plist;
 				INFOPLIST_KEY_GOOGLE_BOOKS_API_KEY = "$(GOOGLE_BOOKS_API_KEY)";
@@ -675,6 +675,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4L84NEK672;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tsundoku/Info.plist;
 				INFOPLIST_KEY_GOOGLE_BOOKS_API_KEY = "$(GOOGLE_BOOKS_API_KEY)";
@@ -696,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4L84NEK672;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4L84NEK672;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
