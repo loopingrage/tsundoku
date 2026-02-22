@@ -2,7 +2,9 @@ import SwiftUI
 
 struct SearchResultRowView: View {
     let result: BookSearchResult
+    let isSaved: Bool
     let onAdd: () -> Void
+    let onRemove: () -> Void
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
@@ -58,11 +60,11 @@ struct SearchResultRowView: View {
 
             Spacer()
 
-            // Add button
-            Button(action: onAdd) {
-                Image(systemName: "plus.circle.fill")
+            // Add/remove button
+            Button(action: isSaved ? onRemove : onAdd) {
+                Image(systemName: isSaved ? "checkmark.circle.fill" : "plus.circle.fill")
                     .font(.title2)
-                    .foregroundStyle(.tint)
+                    .foregroundStyle(isSaved ? Color.green : Color.accentColor)
             }
             .buttonStyle(.plain)
         }

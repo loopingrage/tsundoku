@@ -25,9 +25,12 @@ struct MetadataSearchDemoView: View {
                 }
 
                 ForEach(viewModel.results) { result in
-                    SearchResultRowView(result: result) {
-                        addBook(result)
-                    }
+                    SearchResultRowView(
+                        result: result,
+                        isSaved: viewModel.savedIDs.contains(result.id),
+                        onAdd: { addBook(result) },
+                        onRemove: { removeBook(result) }
+                    )
                 }
             }
             .navigationTitle("Search")
@@ -46,8 +49,35 @@ struct MetadataSearchDemoView: View {
     }
 
     private func addBook(_ result: BookSearchResult) {
+        // Prevent duplicates by checking title + authors
+        let title = result.title
+        let authors = result.authors
+        let descriptor = FetchDescriptor<Book>(predicate: #Predicate {
+            $0.title == title && $0.authors == authors
+        })
+        let existing = (try? modelContext.fetchCount(descriptor)) ?? 0
+        guard existing == 0 else {
+            viewModel.savedIDs.insert(result.id)
+            return
+        }
+
         let book = result.toBook()
         modelContext.insert(book)
+        viewModel.savedIDs.insert(result.id)
+    }
+
+    private func removeBook(_ result: BookSearchResult) {
+        let title = result.title
+        let authors = result.authors
+        let descriptor = FetchDescriptor<Book>(predicate: #Predicate {
+            $0.title == title && $0.authors == authors
+        })
+        if let books = try? modelContext.fetch(descriptor) {
+            for book in books {
+                modelContext.delete(book)
+            }
+        }
+        viewModel.savedIDs.remove(result.id)
     }
 }
 
@@ -57,6 +87,7 @@ final class SearchViewModel {
     var results: [BookSearchResult] = []
     var isSearching = false
     var errorMessage: String?
+    var savedIDs: Set<String> = []
 
     private let service: BookMetadataService = BookMetadataServiceImpl()
 
