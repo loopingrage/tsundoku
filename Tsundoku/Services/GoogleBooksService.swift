@@ -9,7 +9,7 @@ struct GoogleBooksService: BookMetadataService {
         self.apiKey = apiKey
     }
 
-    func search(query: String) async throws -> [BookSearchResult] {
+    func search(query: String, ocrContext: String? = nil) async throws -> [BookSearchResult] {
         guard var components = URLComponents(string: "https://www.googleapis.com/books/v1/volumes") else {
             throw BookMetadataError.invalidURL
         }

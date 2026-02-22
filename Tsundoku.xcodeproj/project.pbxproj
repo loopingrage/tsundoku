@@ -7,22 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0409797E3B4A335BC3D5A403 /* FastSAMBookSegmenter.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F575EE00FBDA5E3D72B31307 /* FastSAMBookSegmenter.mlpackage */; };
+		06F1BEAE83C6B8B0BC04E7C4 /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = DC02340B87DF92539A50CC2F /* MLXLMCommon */; };
 		07B89580B83611E0DB2B49F6 /* SearchResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBECBB2AAB663E3137D1562C /* SearchResultRowView.swift */; };
+		0BE7809DDAF4286EB4952986 /* VLMSpineRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289ECFDF277A30736EA3BBFE /* VLMSpineRecognizer.swift */; };
+		1D0A2E7E2F42C47D1947B23E /* YOLOBookDetector.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1DE88EE8A5E3D5453C57FA7F /* YOLOBookDetector.mlpackage */; };
+		26375A4D3291F3534D036D77 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4CC58A6BC28C2052A488A /* Secrets.swift */; };
+		2753934F7B471618A75D3AD4 /* BookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137B51F25F9183B5F87942 /* BookSearchResult.swift */; };
+		2E303806C5F21E92EB639B35 /* FastSAMSpineDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B32325A6738A9FB726F55 /* FastSAMSpineDetector.swift */; };
+		35FBD61066CD8063946EFA2F /* FastSAMBookSegmenter.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F575EE00FBDA5E3D72B31307 /* FastSAMBookSegmenter.mlpackage */; };
+		36FAD6AA39AB3FCE556A8072 /* YOLOSpineDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E092998CC6C21FA24D07ECB /* YOLOSpineDetector.swift */; };
 		3BDD97F155A13B5E55DD53E7 /* MetadataSearchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695F9988022C0E0975DB0D9 /* MetadataSearchDemoView.swift */; };
+		40F3291184B70FA826BC51AD /* BookMetadataServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294E45EB695D924C334775D /* BookMetadataServiceImpl.swift */; };
 		4CB78D85BB604FA46279611F /* BookMetadataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25669EAD79A9FC8D6D6D3A /* BookMetadataServiceTests.swift */; };
+		4E980638C5BF25090CB7F97A /* PipelineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7DCDCB2036F1B3E1AF635 /* PipelineFactory.swift */; };
+		51A5A109B5AA343418B8777D /* SpineResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7B266A11CA99D552532CB /* SpineResultRowView.swift */; };
 		52B542219D49F3A12AF65BED /* HTMLStripper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93266F0326D7805414CCD78F /* HTMLStripper.swift */; };
+		5A8F1BC10A87F6D846DEFF92 /* FastSAMSpineDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B32325A6738A9FB726F55 /* FastSAMSpineDetector.swift */; };
+		5D3641385E638957ABDA915E /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B6020CD1B18F3459C67193 /* ImageProcessing.swift */; };
 		68FA58482C475B01AEAEB7C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFEC6986B62904213ABC39C3 /* Assets.xcassets */; };
+		6CCBC3470155AF3BDA8CFA55 /* YOLOBookDetector.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 1DE88EE8A5E3D5453C57FA7F /* YOLOBookDetector.mlpackage */; };
 		7E234BB676DC00656CE95348 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACBF712ABF38E2374B1D93 /* LibraryView.swift */; };
 		7E6A9A249DD46ED8533E7987 /* BookMetadataServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294E45EB695D924C334775D /* BookMetadataServiceImpl.swift */; };
+		7FD077E3F60C24872D9FF11E /* ShelfScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29A8F91B6648B689823133 /* ShelfScanView.swift */; };
+		8736B6BF87D0096C6AD60DB6 /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA6A6DFADEF9598CC46A0F /* PlatformImage.swift */; };
+		8DC6C47E4DE631965B089DEC /* FuzzyMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A6B869C1405E7FF2E67AAE /* FuzzyMatcher.swift */; };
+		978F5B9E1C38B57A8ADC1C41 /* GoogleBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EE47FA836151C26E7290B /* GoogleBooksService.swift */; };
+		988EE24AEC3267EC279C431A /* SpineDetectionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389100C4B196D620E0D0E6BA /* SpineDetectionServiceTests.swift */; };
+		9EDA869FAF408E556D6C1755 /* SpineDetectionServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFDC5AC47EC6786FA637CA9 /* SpineDetectionServiceImpl.swift */; };
+		9FE50B3C440289FC35CE205F /* PipelineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7DCDCB2036F1B3E1AF635 /* PipelineFactory.swift */; };
+		A761C3D3329D04DA0E89270A /* SpineScanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A92C519C87D66C6E8A30BE /* SpineScanDetailView.swift */; };
 		A839C4003BA1E2A384789DF0 /* BookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7137B51F25F9183B5F87942 /* BookSearchResult.swift */; };
+		A9AEE51E667EF01047626D76 /* OpenLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCA26D880897ACFF0B7320 /* OpenLibraryService.swift */; };
 		AA748F4F06D1DB3E05FB163C /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6F339780ABAA82399BAF6 /* Book.swift */; };
+		AAD7175761DEB8E183980556 /* SpineDetectionServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFDC5AC47EC6786FA637CA9 /* SpineDetectionServiceImpl.swift */; };
 		AB54D165615F2F265A34FD55 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B4CC58A6BC28C2052A488A /* Secrets.swift */; };
 		B5D54DD562ED04C5E3F226AC /* OpenLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFCA26D880897ACFF0B7320 /* OpenLibraryService.swift */; };
+		BB70A457A6667A1B7B8ED774 /* BookMetadataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED5B555123CBCBA8085623 /* BookMetadataService.swift */; };
+		C0FE58AD4A56320A9446F980 /* MLXVLM in Frameworks */ = {isa = PBXBuildFile; productRef = 7BE7634F141474F56754DDE1 /* MLXVLM */; };
+		C129F2F870F7DF308DD8DD6E /* DetectionPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71194D5D8FE063739D3E61 /* DetectionPipeline.swift */; };
+		C465AF9E754EFD2AFCD3D1ED /* DetectionPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D71194D5D8FE063739D3E61 /* DetectionPipeline.swift */; };
 		CE64718FC153557220C81DA8 /* TsundokuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450D2847CF6D06838C6CFA2 /* TsundokuApp.swift */; };
 		CF5C2594AA25114021EA5B68 /* GoogleBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EE47FA836151C26E7290B /* GoogleBooksService.swift */; };
+		D4787C3B9C4126F7E70B5B66 /* MLXVLM in Frameworks */ = {isa = PBXBuildFile; productRef = D667E0A9A608EEA401D06D52 /* MLXVLM */; };
+		D6B0658E362F6DA9C8551A87 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6949DB963CC9A1D20EA44B /* main.swift */; };
+		D79B3C35B9EF2E013D9CAF38 /* SpineDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F9787BCAC8A01B119EF59 /* SpineDetectionService.swift */; };
 		D8A54D5E2B5D4B246230CE39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935A5CD100023480187EE1C8 /* ContentView.swift */; };
+		D907BABFD529D745784C4E28 /* SpineImageFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A62B85EEDBE97BF5374A39 /* SpineImageFullScreenView.swift */; };
+		DD3E9A1FAD19210F813D90FC /* APIResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD7F37D02C0AA5F946211F /* APIResponseModels.swift */; };
+		E3EAA7B0EA35BF293684FE5D /* HTMLStripper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93266F0326D7805414CCD78F /* HTMLStripper.swift */; };
 		E59FB3DEDD2A3F7AB596AC29 /* APIResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD7F37D02C0AA5F946211F /* APIResponseModels.swift */; };
+		E7E212C83C096C63AC6E449C /* SpineDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F9787BCAC8A01B119EF59 /* SpineDetectionService.swift */; };
+		E7FCC7601CB5821EFDE2FE54 /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 228B415097A38100D5215F21 /* MLXLMCommon */; };
+		EC43D90E89CD9B6F7FDB898C /* VLMSpineRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289ECFDF277A30736EA3BBFE /* VLMSpineRecognizer.swift */; };
+		EECB7B50FC29F4DFF9174A53 /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFA6A6DFADEF9598CC46A0F /* PlatformImage.swift */; };
+		EF5A41037F2B6CBC3CFF18A3 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B6020CD1B18F3459C67193 /* ImageProcessing.swift */; };
 		F1EFEB3E1A6E4A4C7FA8BB63 /* BookMetadataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED5B555123CBCBA8085623 /* BookMetadataService.swift */; };
+		FA7DF8E19501D6926F107D59 /* FuzzyMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A6B869C1405E7FF2E67AAE /* FuzzyMatcher.swift */; };
+		FBD014FE9C026B3CCE94202D /* YOLOSpineDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E092998CC6C21FA24D07ECB /* YOLOSpineDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,33 +78,74 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C7B266A11CA99D552532CB /* SpineResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineResultRowView.swift; sourceTree = "<group>"; };
 		02B6F339780ABAA82399BAF6 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		0C122D237BE3BDB099B04939 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		1DE88EE8A5E3D5453C57FA7F /* YOLOBookDetector.mlpackage */ = {isa = PBXFileReference; path = YOLOBookDetector.mlpackage; sourceTree = "<group>"; };
+		27A62B85EEDBE97BF5374A39 /* SpineImageFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineImageFullScreenView.swift; sourceTree = "<group>"; };
+		289ECFDF277A30736EA3BBFE /* VLMSpineRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLMSpineRecognizer.swift; sourceTree = "<group>"; };
 		3294E45EB695D924C334775D /* BookMetadataServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMetadataServiceImpl.swift; sourceTree = "<group>"; };
+		389100C4B196D620E0D0E6BA /* SpineDetectionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineDetectionServiceTests.swift; sourceTree = "<group>"; };
+		38B6020CD1B18F3459C67193 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
 		3D1B00A1478135A0C470F7B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4450D2847CF6D06838C6CFA2 /* TsundokuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsundokuApp.swift; sourceTree = "<group>"; };
 		49ED5B555123CBCBA8085623 /* BookMetadataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMetadataService.swift; sourceTree = "<group>"; };
+		4E9F9787BCAC8A01B119EF59 /* SpineDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineDetectionService.swift; sourceTree = "<group>"; };
+		5D71194D5D8FE063739D3E61 /* DetectionPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionPipeline.swift; sourceTree = "<group>"; };
 		619C0C6984D594B86D9F641B /* TsundokuTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TsundokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFA6A6DFADEF9598CC46A0F /* PlatformImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformImage.swift; sourceTree = "<group>"; };
 		76B4CC58A6BC28C2052A488A /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		7EB9FB91F8A89FE61A66E561 /* Tsundoku.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Tsundoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AD7F37D02C0AA5F946211F /* APIResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModels.swift; sourceTree = "<group>"; };
+		8E092998CC6C21FA24D07ECB /* YOLOSpineDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLOSpineDetector.swift; sourceTree = "<group>"; };
 		93266F0326D7805414CCD78F /* HTMLStripper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLStripper.swift; sourceTree = "<group>"; };
 		935A5CD100023480187EE1C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9BFDC5AC47EC6786FA637CA9 /* SpineDetectionServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineDetectionServiceImpl.swift; sourceTree = "<group>"; };
+		9D6949DB963CC9A1D20EA44B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9DC7DCDCB2036F1B3E1AF635 /* PipelineFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineFactory.swift; sourceTree = "<group>"; };
 		9FFCA26D880897ACFF0B7320 /* OpenLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibraryService.swift; sourceTree = "<group>"; };
 		A695F9988022C0E0975DB0D9 /* MetadataSearchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataSearchDemoView.swift; sourceTree = "<group>"; };
+		B8A6B869C1405E7FF2E67AAE /* FuzzyMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzyMatcher.swift; sourceTree = "<group>"; };
 		BD25669EAD79A9FC8D6D6D3A /* BookMetadataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMetadataServiceTests.swift; sourceTree = "<group>"; };
+		BED21C1012C5DBC1039A4077 /* TsundokuCLI */ = {isa = PBXFileReference; includeInIndex = 0; path = TsundokuCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23EE47FA836151C26E7290B /* GoogleBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBooksService.swift; sourceTree = "<group>"; };
 		DFACBF712ABF38E2374B1D93 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		DFEC6986B62904213ABC39C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7137B51F25F9183B5F87942 /* BookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResult.swift; sourceTree = "<group>"; };
 		EBECBB2AAB663E3137D1562C /* SearchResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRowView.swift; sourceTree = "<group>"; };
+		F04B32325A6738A9FB726F55 /* FastSAMSpineDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastSAMSpineDetector.swift; sourceTree = "<group>"; };
+		F575EE00FBDA5E3D72B31307 /* FastSAMBookSegmenter.mlpackage */ = {isa = PBXFileReference; path = FastSAMBookSegmenter.mlpackage; sourceTree = "<group>"; };
+		F7A92C519C87D66C6E8A30BE /* SpineScanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpineScanDetailView.swift; sourceTree = "<group>"; };
+		FE29A8F91B6648B689823133 /* ShelfScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfScanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30D1B9D2C47ED26BFE27BE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FE58AD4A56320A9446F980 /* MLXVLM in Frameworks */,
+				06F1BEAE83C6B8B0BC04E7C4 /* MLXLMCommon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE1A0371E9E266D5A7A3B98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4787C3B9C4126F7E70B5B66 /* MLXVLM in Frameworks */,
+				E7FCC7601CB5821EFDE2FE54 /* MLXLMCommon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2E745449EEBFC2882667180C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D6529BBFAE215B0921F24239 /* Library */,
+				5CE3EF3D276456933A8CB4E0 /* Scan */,
 				67C65F69E1C797779D80ED24 /* Search */,
 			);
 			path = Views;
@@ -82,6 +165,7 @@
 			children = (
 				E30EB3048B223E35FB37E4E5 /* Tsundoku */,
 				386E7DB0F3EBB3D7ED6BC24D /* Tsundoku */,
+				A4375AD02414706894FFAE04 /* TsundokuCLI */,
 				8EE84DEA5F28857CD4C5AF8B /* TsundokuTests */,
 				7E4FC1F8FF45B323CB014D9F /* Products */,
 			);
@@ -93,8 +177,21 @@
 				83AD7F37D02C0AA5F946211F /* APIResponseModels.swift */,
 				02B6F339780ABAA82399BAF6 /* Book.swift */,
 				E7137B51F25F9183B5F87942 /* BookSearchResult.swift */,
+				F575EE00FBDA5E3D72B31307 /* FastSAMBookSegmenter.mlpackage */,
+				1DE88EE8A5E3D5453C57FA7F /* YOLOBookDetector.mlpackage */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5CE3EF3D276456933A8CB4E0 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				FE29A8F91B6648B689823133 /* ShelfScanView.swift */,
+				27A62B85EEDBE97BF5374A39 /* SpineImageFullScreenView.swift */,
+				01C7B266A11CA99D552532CB /* SpineResultRowView.swift */,
+				F7A92C519C87D66C6E8A30BE /* SpineScanDetailView.swift */,
+			);
+			path = Scan;
 			sourceTree = "<group>";
 		};
 		67C65F69E1C797779D80ED24 /* Search */ = {
@@ -110,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				7EB9FB91F8A89FE61A66E561 /* Tsundoku.app */,
+				BED21C1012C5DBC1039A4077 /* TsundokuCLI */,
 				619C0C6984D594B86D9F641B /* TsundokuTests.xctest */,
 			);
 			name = Products;
@@ -119,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				BD25669EAD79A9FC8D6D6D3A /* BookMetadataServiceTests.swift */,
+				389100C4B196D620E0D0E6BA /* SpineDetectionServiceTests.swift */,
 			);
 			path = TsundokuTests;
 			sourceTree = "<group>";
@@ -131,10 +230,21 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		A4375AD02414706894FFAE04 /* TsundokuCLI */ = {
+			isa = PBXGroup;
+			children = (
+				9D6949DB963CC9A1D20EA44B /* main.swift */,
+			);
+			path = TsundokuCLI;
+			sourceTree = "<group>";
+		};
 		D33FDEE8D83966EC091D63F2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B8A6B869C1405E7FF2E67AAE /* FuzzyMatcher.swift */,
 				93266F0326D7805414CCD78F /* HTMLStripper.swift */,
+				38B6020CD1B18F3459C67193 /* ImageProcessing.swift */,
+				6FFA6A6DFADEF9598CC46A0F /* PlatformImage.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -176,8 +286,15 @@
 			children = (
 				49ED5B555123CBCBA8085623 /* BookMetadataService.swift */,
 				3294E45EB695D924C334775D /* BookMetadataServiceImpl.swift */,
+				5D71194D5D8FE063739D3E61 /* DetectionPipeline.swift */,
+				F04B32325A6738A9FB726F55 /* FastSAMSpineDetector.swift */,
 				D23EE47FA836151C26E7290B /* GoogleBooksService.swift */,
 				9FFCA26D880897ACFF0B7320 /* OpenLibraryService.swift */,
+				9DC7DCDCB2036F1B3E1AF635 /* PipelineFactory.swift */,
+				4E9F9787BCAC8A01B119EF59 /* SpineDetectionService.swift */,
+				9BFDC5AC47EC6786FA637CA9 /* SpineDetectionServiceImpl.swift */,
+				289ECFDF277A30736EA3BBFE /* VLMSpineRecognizer.swift */,
+				8E092998CC6C21FA24D07ECB /* YOLOSpineDetector.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -209,6 +326,7 @@
 			buildPhases = (
 				39D29FC2FB70549C4EAADC57 /* Sources */,
 				21DD11A712DE96F848D1A533 /* Resources */,
+				30D1B9D2C47ED26BFE27BE30 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,10 +334,32 @@
 			);
 			name = Tsundoku;
 			packageProductDependencies = (
+				7BE7634F141474F56754DDE1 /* MLXVLM */,
+				DC02340B87DF92539A50CC2F /* MLXLMCommon */,
 			);
 			productName = Tsundoku;
 			productReference = 7EB9FB91F8A89FE61A66E561 /* Tsundoku.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BE5D1F5D17918C49E1E7273D /* TsundokuCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EC9E9496AB3258A2708E69 /* Build configuration list for PBXNativeTarget "TsundokuCLI" */;
+			buildPhases = (
+				A03AB68EFC7D37FABF07F0CC /* Sources */,
+				CCE1A0371E9E266D5A7A3B98 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TsundokuCLI;
+			packageProductDependencies = (
+				D667E0A9A608EEA401D06D52 /* MLXVLM */,
+				228B415097A38100D5215F21 /* MLXLMCommon */,
+			);
+			productName = TsundokuCLI;
+			productReference = BED21C1012C5DBC1039A4077 /* TsundokuCLI */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,11 +380,15 @@
 			);
 			mainGroup = 438FAD2C5521E1CB27FD48E9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3E57ADD14A48CA8B3C66CC32 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9511E8AFFB69501B0BD5E81C /* Tsundoku */,
+				BE5D1F5D17918C49E1E7273D /* TsundokuCLI */,
 				613679927106E392C71956AA /* TsundokuTests */,
 			);
 		};
@@ -267,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CB78D85BB604FA46279611F /* BookMetadataServiceTests.swift in Sources */,
+				988EE24AEC3267EC279C431A /* SpineDetectionServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +425,58 @@
 				7E6A9A249DD46ED8533E7987 /* BookMetadataServiceImpl.swift in Sources */,
 				A839C4003BA1E2A384789DF0 /* BookSearchResult.swift in Sources */,
 				D8A54D5E2B5D4B246230CE39 /* ContentView.swift in Sources */,
+				C129F2F870F7DF308DD8DD6E /* DetectionPipeline.swift in Sources */,
+				35FBD61066CD8063946EFA2F /* FastSAMBookSegmenter.mlpackage in Sources */,
+				5A8F1BC10A87F6D846DEFF92 /* FastSAMSpineDetector.swift in Sources */,
+				FA7DF8E19501D6926F107D59 /* FuzzyMatcher.swift in Sources */,
 				CF5C2594AA25114021EA5B68 /* GoogleBooksService.swift in Sources */,
 				52B542219D49F3A12AF65BED /* HTMLStripper.swift in Sources */,
+				EF5A41037F2B6CBC3CFF18A3 /* ImageProcessing.swift in Sources */,
 				7E234BB676DC00656CE95348 /* LibraryView.swift in Sources */,
 				3BDD97F155A13B5E55DD53E7 /* MetadataSearchDemoView.swift in Sources */,
 				B5D54DD562ED04C5E3F226AC /* OpenLibraryService.swift in Sources */,
+				9FE50B3C440289FC35CE205F /* PipelineFactory.swift in Sources */,
+				EECB7B50FC29F4DFF9174A53 /* PlatformImage.swift in Sources */,
 				07B89580B83611E0DB2B49F6 /* SearchResultRowView.swift in Sources */,
 				AB54D165615F2F265A34FD55 /* Secrets.swift in Sources */,
+				7FD077E3F60C24872D9FF11E /* ShelfScanView.swift in Sources */,
+				E7E212C83C096C63AC6E449C /* SpineDetectionService.swift in Sources */,
+				9EDA869FAF408E556D6C1755 /* SpineDetectionServiceImpl.swift in Sources */,
+				D907BABFD529D745784C4E28 /* SpineImageFullScreenView.swift in Sources */,
+				51A5A109B5AA343418B8777D /* SpineResultRowView.swift in Sources */,
+				A761C3D3329D04DA0E89270A /* SpineScanDetailView.swift in Sources */,
 				CE64718FC153557220C81DA8 /* TsundokuApp.swift in Sources */,
+				0BE7809DDAF4286EB4952986 /* VLMSpineRecognizer.swift in Sources */,
+				1D0A2E7E2F42C47D1947B23E /* YOLOBookDetector.mlpackage in Sources */,
+				36FAD6AA39AB3FCE556A8072 /* YOLOSpineDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03AB68EFC7D37FABF07F0CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3E9A1FAD19210F813D90FC /* APIResponseModels.swift in Sources */,
+				BB70A457A6667A1B7B8ED774 /* BookMetadataService.swift in Sources */,
+				40F3291184B70FA826BC51AD /* BookMetadataServiceImpl.swift in Sources */,
+				2753934F7B471618A75D3AD4 /* BookSearchResult.swift in Sources */,
+				C465AF9E754EFD2AFCD3D1ED /* DetectionPipeline.swift in Sources */,
+				0409797E3B4A335BC3D5A403 /* FastSAMBookSegmenter.mlpackage in Sources */,
+				2E303806C5F21E92EB639B35 /* FastSAMSpineDetector.swift in Sources */,
+				8DC6C47E4DE631965B089DEC /* FuzzyMatcher.swift in Sources */,
+				978F5B9E1C38B57A8ADC1C41 /* GoogleBooksService.swift in Sources */,
+				E3EAA7B0EA35BF293684FE5D /* HTMLStripper.swift in Sources */,
+				5D3641385E638957ABDA915E /* ImageProcessing.swift in Sources */,
+				A9AEE51E667EF01047626D76 /* OpenLibraryService.swift in Sources */,
+				4E980638C5BF25090CB7F97A /* PipelineFactory.swift in Sources */,
+				8736B6BF87D0096C6AD60DB6 /* PlatformImage.swift in Sources */,
+				26375A4D3291F3534D036D77 /* Secrets.swift in Sources */,
+				D79B3C35B9EF2E013D9CAF38 /* SpineDetectionService.swift in Sources */,
+				AAD7175761DEB8E183980556 /* SpineDetectionServiceImpl.swift in Sources */,
+				EC43D90E89CD9B6F7FDB898C /* VLMSpineRecognizer.swift in Sources */,
+				6CCBC3470155AF3BDA8CFA55 /* YOLOBookDetector.mlpackage in Sources */,
+				FBD014FE9C026B3CCE94202D /* YOLOSpineDetector.swift in Sources */,
+				D6B0658E362F6DA9C8551A87 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +549,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_STRICT_CONCURRENCY = complete;
@@ -368,6 +556,22 @@
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
+		};
+		1D139E125DABDDF7E0857CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyinc.TsundokuCLI;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Release;
 		};
 		1FAA48E13CC64CA41DF0C5F3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -420,7 +624,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_STRICT_CONCURRENCY = complete;
@@ -428,6 +631,22 @@
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
+		};
+		7981EE297A58F5BFE0BEC678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joyinc.TsundokuCLI;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Debug;
 		};
 		9C57D29B741626E673F8D073 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -519,6 +738,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		88EC9E9496AB3258A2708E69 /* Build configuration list for PBXNativeTarget "TsundokuCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7981EE297A58F5BFE0BEC678 /* Debug */,
+				1D139E125DABDDF7E0857CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		9E3FE0ED4C541DAC292FD9D3 /* Build configuration list for PBXProject "Tsundoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -538,6 +766,40 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E57ADD14A48CA8B3C66CC32 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.30.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		228B415097A38100D5215F21 /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E57ADD14A48CA8B3C66CC32 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+		7BE7634F141474F56754DDE1 /* MLXVLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E57ADD14A48CA8B3C66CC32 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXVLM;
+		};
+		D667E0A9A608EEA401D06D52 /* MLXVLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E57ADD14A48CA8B3C66CC32 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXVLM;
+		};
+		DC02340B87DF92539A50CC2F /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E57ADD14A48CA8B3C66CC32 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4C760AFA77F8AC76BADA1AE /* Project object */;
 }

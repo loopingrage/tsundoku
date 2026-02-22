@@ -3,6 +3,7 @@ import SwiftData
 
 struct MetadataSearchDemoView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(AppNavigation.self) private var appNav
     @State private var viewModel = SearchViewModel()
 
     var body: some View {
@@ -43,6 +44,14 @@ struct MetadataSearchDemoView: View {
             .overlay {
                 if viewModel.isSearching {
                     ProgressView("Searching...")
+                }
+            }
+            .onChange(of: appNav.searchQuery) { _, newQuery in
+                guard let query = newQuery, !query.isEmpty else { return }
+                viewModel.query = query
+                appNav.searchQuery = nil
+                Task {
+                    await viewModel.search()
                 }
             }
         }

@@ -19,6 +19,7 @@ struct BookSearchResult: Identifiable, Sendable {
     let coverThumbnailURL: String?
     let source: BookDataSource
 
+    #if canImport(UIKit)
     func toBook() -> Book {
         Book(
             title: title,
@@ -34,4 +35,5 @@ struct BookSearchResult: Identifiable, Sendable {
             source: source.rawValue
         )
     }
+    #endif
 }

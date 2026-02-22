@@ -6,7 +6,7 @@ import Testing
 struct MockSuccessService: BookMetadataService {
     let results: [BookSearchResult]
 
-    func search(query: String) async throws -> [BookSearchResult] {
+    func search(query: String, ocrContext: String?) async throws -> [BookSearchResult] {
         results
     }
 
@@ -19,7 +19,7 @@ struct MockSuccessService: BookMetadataService {
 }
 
 struct MockFailureService: BookMetadataService {
-    func search(query: String) async throws -> [BookSearchResult] {
+    func search(query: String, ocrContext: String?) async throws -> [BookSearchResult] {
         throw BookMetadataError.noResults
     }
 

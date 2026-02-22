@@ -1,0 +1,150 @@
+{
+  "referenceImage": "mybooks-001.heic",
+  "groundTruth": "mybooks-001.json",
+  "groundTruthCount": 21,
+  "iterations": [
+    {
+      "iteration": 0,
+      "label": "baseline",
+      "parameters": {
+        "minimumAspectRatio": 2.0,
+        "minimumHeightFraction": 0.15,
+        "minPeakDistanceFraction": 0.025,
+        "peakThresholdFraction": 0.08,
+        "valleyDepthThreshold": 0.40,
+        "maxWidthFraction": 0.30
+      },
+      "results": {
+        "spinesDetected": 24,
+        "spinesWithOCR": 20,
+        "totalTimeMs": 11521
+      },
+      "score": "7/21 OCR queries matchable, 3/21 metadata matches",
+      "notes": "Major issues: merged spines, single-observation query selection, single OCR orientation"
+    },
+    {
+      "iteration": 1,
+      "label": "sensitive-peaks",
+      "changes": "peakThreshold=0.03, valleyDepth=0.60, minPeakDist=0.012, all-text query",
+      "results": {
+        "spinesDetected": 48,
+        "spinesWithOCR": 26
+      },
+      "score": "~10/21 OCR queries matchable",
+      "notes": "Too many false splits (48 detected). All-text query includes garbage. But found Meditations, East of Eden separated."
+    },
+    {
+      "iteration": 2,
+      "label": "middle-ground-peaks-dual-ocr",
+      "changes": "peakThreshold=0.05, valleyDepth=0.50, minPeakDist=0.015, dual orientation OCR (.right/.left), largest-bbox query with author",
+      "results": {
+        "spinesDetected": 36,
+        "spinesWithOCR": 28
+      },
+      "score": "~13/21 OCR queries matchable",
+      "notes": "Dual OCR orientation fixed Sol Majestic. Tell Me Everything now separated. Some non-Latin hallucinations (Thai)."
+    },
+    {
+      "iteration": 3,
+      "label": "padding-nonlatin-filter-tighter-width",
+      "changes": "maxWidthFraction=0.12, horizontal padding 30% for narrow crops, non-Latin text filter, contour width filter",
+      "results": {
+        "spinesDetected": 35,
+        "spinesWithOCR": 34
+      },
+      "score": "~15/21 OCR queries matchable",
+      "notes": "Padding was huge win: God Equation, Can American Capitalism, Reverberation now readable. But lost Monte Cristo (maxWidth too tight)."
+    },
+    {
+      "iteration": 5,
+      "label": "edge-peaks-full-coverage",
+      "changes": "maxWidthFraction=0.20, added implicit edge peaks at x=0 and x=imageWidth for full shelf coverage",
+      "results": {
+        "spinesDetected": 36,
+        "spinesWithOCR": 33
+      },
+      "score": "~16/21 OCR queries matchable",
+      "notes": "Monte Cristo back via edge peaks. Non-Latin filter removed 2 garbage entries."
+    },
+    {
+      "iteration": 6,
+      "label": "first-metadata-test",
+      "changes": "No detection changes. Tested with --lookup.",
+      "metadataResults": {
+        "correctMatches": 9,
+        "totalResults": 33,
+        "time": 57098
+      },
+      "score": "9/21 correct metadata matches",
+      "notes": "Google Books API disabled (403). Open Library title= param fails with combined queries. Fixed OL to use q= param."
+    },
+    {
+      "iteration": 8,
+      "label": "final-search-optimization",
+      "changes": "Combined title+author query with retry strategy: clean punctuation, remove short words (>=4 chars), try both cleaned and original query on both providers",
+      "parameters": {
+        "minimumAspectRatio": 2.0,
+        "minimumHeightFraction": 0.15,
+        "minPeakDistanceFraction": 0.015,
+        "peakThresholdFraction": 0.05,
+        "valleyDepthThreshold": 0.50,
+        "iouDeduplicationThreshold": 0.5,
+        "maxWidthFraction": 0.20,
+        "ocrOrientation": "dual (right + left, pick higher avg confidence)",
+        "cropPadding": "30% horizontal for spines < 200px wide",
+        "nonLatinFilter": true,
+        "edgePeaks": true
+      },
+      "metadataResults": {
+        "correctMatches": 12,
+        "totalResults": 33,
+        "time": 57098
+      },
+      "score": "12/21 correct metadata matches (57%)",
+      "matchedBooks": [
+        "The Count of Monte Cristo",
+        "Nervous Energy",
+        "Accelerate",
+        "East of Eden",
+        "The God Equation",
+        "The Blue Machine",
+        "Abundance",
+        "The Sol Majestic",
+        "Can American Capitalism Survive?",
+        "The Orbital Perspective",
+        "A Hacker's Mind",
+        "The Rust Programming Language"
+      ],
+      "missingBooks": {
+        "mergedSpines": ["Meditations", "Talking to My Daughter About the Economy"],
+        "ocrErrors": ["Atomic Habits (tomic)", "Sophie's World (lostein)", "Tell Me Everything (tverything)", "The Box (DOX)", "Reverberation (REVERRERATIONI)"],
+        "undetectable": ["This Boy's Life (gold cover, minimal spine text)"],
+        "wrongSearchResult": ["Genius (query 'GENIUS JAMES' too generic for OL)"]
+      }
+    }
+  ],
+  "summary": {
+    "improvementPath": "3/21 → 9/21 → 12/21 metadata matches over 8 iterations",
+    "keyWins": [
+      "Dual OCR orientation (left/right) improved reading of rotated text",
+      "Horizontal padding for narrow crops dramatically improved OCR quality",
+      "Non-Latin text filter eliminated hallucinated Thai/Arabic OCR",
+      "Edge peaks ensured full shelf coverage (leftmost/rightmost books)",
+      "Open Library q= search instead of title= fixed metadata resolution",
+      "Query retry with cleaned text (remove short words) caught more matches"
+    ],
+    "remainingLimitations": [
+      "Merged thin books (Meditations + Nervous Energy + Talking to My Daughter) - need better peak resolution or different segmentation",
+      "OCR errors on narrow/dark spines (missing first letters, character substitutions)",
+      "Generic single-word queries (GENIUS) return wrong Open Library results",
+      "This Boy's Life has minimal visible spine text (gold cover)",
+      "Google Books API disabled - would likely improve results if enabled"
+    ],
+    "recommendedNextSteps": [
+      "Enable Google Books API in GCP console for much better search results",
+      "Consider SAM-based segmentation for the merged spine regions",
+      "Try VNRecognizeTextRequest with revision3 for improved OCR accuracy",
+      "Add post-OCR spell correction for common substitutions (l→J, v→e)"
+    ]
+  }
+}

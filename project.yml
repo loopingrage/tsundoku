@@ -19,12 +19,22 @@ settings:
     TARGETED_DEVICE_FAMILY: 1
     SWIFT_STRICT_CONCURRENCY: complete
 
+packages:
+  mlx-swift-lm:
+    url: https://github.com/ml-explore/mlx-swift-lm
+    minorVersion: 2.30.6
+
 targets:
   Tsundoku:
     type: application
     platform: iOS
     sources:
       - path: Tsundoku
+    dependencies:
+      - package: mlx-swift-lm
+        product: MLXVLM
+      - package: mlx-swift-lm
+        product: MLXLMCommon
     settings:
       base:
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
@@ -38,6 +48,45 @@ targets:
       path: Tsundoku/Info.plist
       properties:
         GOOGLE_BOOKS_API_KEY: $(GOOGLE_BOOKS_API_KEY)
+        NSCameraUsageDescription: Tsundoku uses the camera to photograph your bookshelves for spine detection.
+        NSPhotoLibraryUsageDescription: Tsundoku accesses your photo library to select bookshelf images for spine detection.
+
+  TsundokuCLI:
+    type: tool
+    platform: macOS
+    sources:
+      - path: TsundokuCLI
+      - path: Tsundoku/Utilities/PlatformImage.swift
+      - path: Tsundoku/Utilities/ImageProcessing.swift
+      - path: Tsundoku/Utilities/HTMLStripper.swift
+      - path: Tsundoku/Utilities/FuzzyMatcher.swift
+      - path: Tsundoku/Services/SpineDetectionService.swift
+      - path: Tsundoku/Services/SpineDetectionServiceImpl.swift
+      - path: Tsundoku/Services/DetectionPipeline.swift
+      - path: Tsundoku/Services/PipelineFactory.swift
+      - path: Tsundoku/Services/YOLOSpineDetector.swift
+      - path: Tsundoku/Services/VLMSpineRecognizer.swift
+      - path: Tsundoku/Services/FastSAMSpineDetector.swift
+      - path: Tsundoku/Models/YOLOBookDetector.mlpackage
+      - path: Tsundoku/Models/FastSAMBookSegmenter.mlpackage
+      - path: Tsundoku/Services/BookMetadataService.swift
+      - path: Tsundoku/Services/BookMetadataServiceImpl.swift
+      - path: Tsundoku/Services/GoogleBooksService.swift
+      - path: Tsundoku/Services/OpenLibraryService.swift
+      - path: Tsundoku/Models/BookSearchResult.swift
+      - path: Tsundoku/Models/APIResponseModels.swift
+      - path: Tsundoku/Config/Secrets.swift
+    dependencies:
+      - package: mlx-swift-lm
+        product: MLXVLM
+      - package: mlx-swift-lm
+        product: MLXLMCommon
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.joyinc.TsundokuCLI
+        GENERATE_INFOPLIST_FILE: true
+        SWIFT_STRICT_CONCURRENCY: complete
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
 
   TsundokuTests:
     type: bundle.unit-test

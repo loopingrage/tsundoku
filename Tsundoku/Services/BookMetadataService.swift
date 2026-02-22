@@ -21,6 +21,12 @@ enum BookMetadataError: Error, LocalizedError {
 }
 
 protocol BookMetadataService: Sendable {
-    func search(query: String) async throws -> [BookSearchResult]
+    func search(query: String, ocrContext: String?) async throws -> [BookSearchResult]
     func lookup(isbn: String) async throws -> BookSearchResult
+}
+
+extension BookMetadataService {
+    func search(query: String) async throws -> [BookSearchResult] {
+        try await search(query: query, ocrContext: nil)
+    }
 }

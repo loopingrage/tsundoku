@@ -20,5 +20,9 @@
 	<string>1</string>
 	<key>GOOGLE_BOOKS_API_KEY</key>
 	<string>$(GOOGLE_BOOKS_API_KEY)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Tsundoku uses the camera to photograph your bookshelves for spine detection.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Tsundoku accesses your photo library to select bookshelf images for spine detection.</string>
 </dict>
 </plist>

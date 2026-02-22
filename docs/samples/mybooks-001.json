@@ -1,0 +1,132 @@
+{
+  "image": "mybooks-001.heic",
+  "description": "Single shelf, left to right, 21 books",
+  "books": [
+    {
+      "index": 0,
+      "title": "The Count of Monte Cristo",
+      "authors": ["Alexandre Dumas"],
+      "notes": "Modern Library edition, leaning/angled"
+    },
+    {
+      "index": 1,
+      "title": "Talking to My Daughter About the Economy",
+      "authors": ["Yanis Varoufakis"],
+      "notes": "Dark cover, spine text rotated"
+    },
+    {
+      "index": 2,
+      "title": "Nervous Energy: Harness the Power of Your Anxiety",
+      "authors": ["Dr. Chloe Carmichael"],
+      "notes": "Blue-green striped cover"
+    },
+    {
+      "index": 3,
+      "title": "Meditations",
+      "authors": ["Marcus Aurelius"],
+      "notes": "Dover Thrift edition, thin blue spine"
+    },
+    {
+      "index": 4,
+      "title": "Accelerate: The Science of Lean Software and DevOps",
+      "authors": ["Nicole Forsgren", "Jez Humble", "Gene Kim"],
+      "notes": "Dark cover"
+    },
+    {
+      "index": 5,
+      "title": "Atomic Habits",
+      "authors": ["James Clear"],
+      "notes": "White cover, rh Business Books"
+    },
+    {
+      "index": 6,
+      "title": "This Boy's Life: A Memoir",
+      "authors": ["Tobias Wolff"],
+      "notes": "Gold/yellow cover"
+    },
+    {
+      "index": 7,
+      "title": "East of Eden",
+      "authors": ["John Steinbeck"],
+      "notes": "Penguin Classics edition"
+    },
+    {
+      "index": 8,
+      "title": "The God Equation",
+      "authors": ["Michio Kaku"],
+      "notes": "Dark cover, Doubleday"
+    },
+    {
+      "index": 9,
+      "title": "The Blue Machine: How the Ocean Works",
+      "authors": ["Helen Czerski"],
+      "notes": "Dark cover, Norton"
+    },
+    {
+      "index": 10,
+      "title": "The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger",
+      "authors": ["Marc Levinson"],
+      "notes": "Princeton University Press, blueprint-patterned cover"
+    },
+    {
+      "index": 11,
+      "title": "Abundance",
+      "authors": ["Ezra Klein", "Derek Thompson"],
+      "notes": "Cream cover, Avid Reader Press"
+    },
+    {
+      "index": 12,
+      "title": "The Sol Majestic",
+      "authors": ["Ferrett Steinmetz"],
+      "notes": "Dark cover with fork/plate icon, Tor"
+    },
+    {
+      "index": 13,
+      "title": "Can American Capitalism Survive?",
+      "authors": ["Steven Pearlstein"],
+      "notes": "Dark blue cover, St. Martin's Press"
+    },
+    {
+      "index": 14,
+      "title": "The Orbital Perspective",
+      "authors": ["Ron Garan"],
+      "notes": "Yellow spine"
+    },
+    {
+      "index": 15,
+      "title": "Tell Me Everything",
+      "authors": ["Elizabeth Strout"],
+      "notes": "White cover, Random House"
+    },
+    {
+      "index": 16,
+      "title": "Genius: The Life and Science of Richard Feynman",
+      "authors": ["James Gleick"],
+      "notes": "Red and black cover, Vintage/FSG Classics"
+    },
+    {
+      "index": 17,
+      "title": "Sophie's World",
+      "authors": ["Jostein Gaarder"],
+      "notes": "White cover"
+    },
+    {
+      "index": 18,
+      "title": "Reverberation",
+      "authors": ["Blanchard"],
+      "notes": "Black cover, Abrams Image"
+    },
+    {
+      "index": 19,
+      "title": "A Hacker's Mind",
+      "authors": ["Bruce Schneier"],
+      "notes": "Colorful/psychedelic cover, Norton"
+    },
+    {
+      "index": 20,
+      "title": "The Rust Programming Language",
+      "authors": ["Steve Klabnik", "Carol Nichols"],
+      "notes": "2nd Edition, No Starch Press, Rust 2021"
+    }
+  ]
+}

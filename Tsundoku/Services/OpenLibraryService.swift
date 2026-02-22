@@ -7,13 +7,13 @@ struct OpenLibraryService: BookMetadataService {
         self.session = session
     }
 
-    func search(query: String) async throws -> [BookSearchResult] {
+    func search(query: String, ocrContext: String? = nil) async throws -> [BookSearchResult] {
         guard var components = URLComponents(string: "https://openlibrary.org/search.json") else {
             throw BookMetadataError.invalidURL
         }
 
         components.queryItems = [
-            URLQueryItem(name: "title", value: query),
+            URLQueryItem(name: "q", value: query),
             URLQueryItem(name: "limit", value: "10"),
             URLQueryItem(name: "fields", value: "key,title,author_name,first_publish_year,isbn,subject,cover_i"),
         ]
